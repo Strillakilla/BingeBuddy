@@ -15,6 +15,10 @@
         .navbar {
             background-color: #111;
             padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
         .logo {
             font-size: 24px;
@@ -41,7 +45,11 @@
             text-align: left;
         }
         .section {
+            display: none;
             margin-bottom: 40px;
+        }
+        .section.active {
+            display: block;
         }
         h2 {
             color: #33ccff;
@@ -54,13 +62,16 @@
             width: 100%;
         }
     </style>
-        <script>
+    <script>
         function navigateTo(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
             }
         }
+        window.onload = () => navigateTo('home');
     </script>
 </head>
 <body>
