@@ -3,69 +3,71 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BingeBuddy</title>    
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
+    <title>BingeBuddy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
         }
-.navbar {
-    background-color: #111;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+        .navbar {
+            background-color: #111;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(to right, #33ccff, #ff5050, #9933ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            background: linear-gradient(to right, #33ccff, #ff5050, #9933ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-.nav-button {
-    background-color: #333;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
+        .nav-button {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
         }
-.nav-button:hover {
-    background-color: #555;
+        .nav-button:hover {
+            background-color: #555;
         }
-.main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: left;
+        .main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: left;
         }
-.section {
-    display: none;
-    margin-bottom: 40px;
+        .section {
+            display: none;
+            margin-bottom: 40px;
         }
-.section.active {
-    display: block;
+        .section.active {
+            display: block;
         }
-    h2 {
-    color: #33ccff;
+        h2 {
+            color: #33ccff;
         }
-.footer {
-    background-color: #111;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+        .footer {
+            background-color: #111;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-.problem-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+            .problem-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
+    </style>
     <script>
         function navigateTo(sectionId) {
             const sections = document.querySelectorAll('.section');
@@ -96,7 +98,7 @@ body {
     <div class="section" id="home">
         <h2>Elevator Pitch</h2>
         <p>BingeBuddy helps you organize your watchlist and find new content across all your streaming platforms — because pirating is illegal and managing subscriptions shouldn’t be a headache.</p>
-        <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Bingbuddy_Logo.png">
+        <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/Bingbuddy_Logo.png">
    <h3>Learn More</h3>
 <p>
   <a href="https://www.odu.edu/" target="_blank" style="color: #33ccff;">Old Dominion University</a><br>
@@ -120,7 +122,7 @@ body {
             <li>Inconsistent notifications can cause viewers to miss new episodes</li>
             <li>There is a monetary strain of maintaining multiple subscriptions</li>
         </ul>
-            <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Image_ProblemCharacterisitcs.png">
+            <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/Image_ProblemCharacterisitcs.png">
             <p><small>>https://amt-lab.org/blog/2021/11/streaming-service-algorithms-are-biased-and-directly-affect-content-development</small><p>
             <p>Streaming service subscriptions have grown rapidly and will likely keep rising as platforms keep adding exclusive content.<p>
             <p>Clear need to help viewers track and bookmark across platforms.<p>
