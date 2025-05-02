@@ -42,30 +42,14 @@
             background-color: #555;
         }
         .main {
-            padding: 60px 20px;
+            padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
             text-align: center;
         }
-        .main p {
-            overflow-wrap: break-word;
-            margin: 15px 0;
-            text-align: left;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .main ul{
-            text-align: left;
-            max-width: 800px;
-            margin: 20px auto;
-        }
         .section {
             display: none;
-            margin-bottom: 60px;
-        }
-        .section p, .section ul, .section img {
-            margin: 20px 0;
+            margin-bottom: 40px;
         }
         .section.active {
             display: block;
@@ -105,45 +89,6 @@
             color: white;
             text-decoration: underline;
         }
-        #home p{
-            text-align: center;
-            max-width: 600px;
-        }
-        #home img{
-            display: block;
-            max-width: 50%;
-            height: auto;
-            margin: 20px auto;
-        }
-        @media (max-width: 768px) {
-            .main {
-                padding: 40px 10 px;
-            }
-            .navbar {
-                flex-direction: column;
-                padding: 10px;
-            }
-            .nav-button {
-                width: 100%;
-                margin: 5px 0;
-            }
-            .main p, .main ul {
-                font-size: 1em;
-                max-width: 100%;
-            }
-            .section img, #home img{
-                max-width: 90%;
-            }
-            #presentations iframe{
-                width: 100%;
-                height: 300px;
-            }
-            h2 {
-                font-size: 2em;
-            }
-            h3 {
-                font-size 1.3em;
-            }
     </style>
     <script>
         function navigateTo(sectionId) {
