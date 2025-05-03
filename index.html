@@ -17,7 +17,7 @@
             color: #e0e0e0;
             line-height: 1.6;
             position: relative;
-            font-size: 1.25 rem;
+            font-size: 1.25rem;
         }
          .navbar {
             background-color: #1c1c1c;
@@ -123,6 +123,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        .problem-img, .diagram-img {
+            max-width: 100%;
+        }
+        .mockup-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .mockup-gallery img {
+            max-width: 300px;
+        }
         #home p {
             text-align: center;
             max-width: 600px;
@@ -162,15 +174,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            }
+        }
          .footer-content {
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 1rem;
             }
+        .footer p {
+            margin: 0;
+        }
          .footer a {
-             color: #00ddeb;
+             color: #33ccff;
              text-decoration: underline;
          }
         .footer-logo {
@@ -252,15 +267,12 @@
         <h2>Elevator Pitch</h2>
         <p>BingeBuddy helps you organize your watchlist and find new content across all your streaming platforms — because pirating is illegal and managing subscriptions shouldn’t be a headache.</p>
         <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Bingbuddy_Logo.png">
-</p>
-    </div>
     </div>
     <div class="section" id="about">
         <h2>About Us</h2>
         <p>CS410 - Team Red - Spring 2025. A team of students from Old Dominion University creating innovative streaming solutions.</p>
         <h3>Meet the Team</h3>
         <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/MeetTheTeam3.png" alt="Meet The Team" class="problem-img">
-        </div>
     </div>
     <div class="section" id="problem">
         <h2>Problem Description</h2>
@@ -335,7 +347,10 @@
     <div class="section" id="lab1">
         <h2>Lab 1</h2>
         <div style="text-align:center;"><p>Documentation and analysis for our CS410 Lab 1 deliverable.</p>
+             </ul>
         <div style="text-align:center;"><li>Link to Lab 1 Outline: <a href="documents/lab1outline.pdf" target="_blank">View PDF</a></li>
+             </ul>
+        </div>
     </div>
     <div class="section" id="references">
         <h2>References</h2>
@@ -362,11 +377,12 @@
             <li><strong>Watchlist:</strong> A personalized list of media content that a user intends to watch, typically organized by platform or preference.</li>
         </ol>
     </div>
-</div>
+</main>
 <div style="height: 80px;"></div>
 <div class="footer">
      &copy; BingeBuddy <br>CS410 - Team Red - Spring 2025 <br> <a href="https://www.odu.edu/" target="_blank" style="color: #33ccff;">Old Dominion University</a> | <a href="https://www.odu.edu/computer-science" target="_blank" style="color: #33ccff;">ODU Computer Science Dept.</a>
     <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Bingbuddy_Logo.png" alt="BingeBuddy Logo" class="footer-logo" onerror="this.src='https://via.placeholder.com/80?text=Logo';">
     </div>
+    </footer>
 </body>
 </html>
