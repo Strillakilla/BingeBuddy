@@ -140,6 +140,36 @@
             color: #00ddeb;
             text-decoration: underline;
         }
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .nav-button {
+                width: 100%;
+                padding: 0.75rem;
+                font-size: 1rem;
+            }
+            .main {
+                padding: 2rem 1rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            p, ul, ol {
+                font-size: 0.9rem;
+                max-width: 100%;
+            }
+            #presentations iframe {
+                height: 300px;
+            }
+            #home img {
+                max-width: 80%;
+            }
+        }
     </style>
     <script>
         function navigateTo(sectionId) {
