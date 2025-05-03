@@ -17,6 +17,7 @@
             color: #e0e0e0;
             line-height: 1.6;
             position: relative;
+            font-size: 1.25 rem;
         }
          .navbar {
             background-color: #1c1c1c;
@@ -74,7 +75,7 @@
         .main {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 1.5rem;
+            padding: 5rem 1.5 3rem;
         }
         .section {
             display: none;
@@ -119,6 +120,7 @@
             display: block;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         #home p {
             text-align: center;
@@ -142,11 +144,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        #lab1 a {
-             display: inline;
-             color: white;
-             text-decoration: underline;
-         }
          a {
             color: #00ddeb;
             text-decoration: underline;
@@ -161,10 +158,24 @@
             text-align: center;
             font-size: 0.9rem;
             color: #c0c0c0;
+            display: flex;
+            justify-conent: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+         .footer p {
+            margin: 0;
         }
         .footer a {
             color: #00ddeb;
             text-decoration: underline;
+        }
+        .footer-logo {
+            max-width: 80px;
+            transition: transform 0.3s ease;
+        }
+        .footer-logo:hover {
+            transform: scale(1.1);
         }
         @media (max-width: 768px) {
             .navbar-container {
@@ -177,7 +188,7 @@
                 font-size: 1rem;
             }
             .main {
-                padding: 2rem 1rem;
+                padding: 4rem 1rem 2rem;
             }
             h2 {
                 font-size: 1.75rem;
@@ -186,17 +197,22 @@
                 font-size: 1.25rem;
             }
             p, ul, ol {
-                font-size: 0.9rem;
+                font-size: 1.125rem;
                 max-width: 100%;
             }
-            #presentations iframe {
-                height: 300px;
-            }
             #home img {
-                max-width: 80%;
+                max-width: 300px;
             }
             #deliverables img {
                 max-width: 600px;
+            }
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-logo {
+                margin-top: 1rem;
+                max-width: 60px;
             }
         }
     </style>
@@ -343,6 +359,8 @@
 <div style="height: 80px;"></div>
 <div class="footer">
     &copy; BingeBuddy <br>CS410 - Team Red - Spring 2025 <br> <a href="https://www.odu.edu/" target="_blank" style="color: #33ccff;">Old Dominion University</a> | <a href="https://www.odu.edu/computer-science" target="_blank" style="color: #33ccff;">ODU Computer Science Dept.</a>
+    </div>
+        <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Bingbuddy_Logo.png" alt="BingeBuddy Logo" class="footer-logo" onerror="this.src='https://via.placeholder.com/80?text=Logo';">
 </div>
 </body>
 </html>
