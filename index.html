@@ -141,6 +141,11 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+        #lab1 a {
+             display: inline;
+             color: white;
+             text-decoration: underline;
+         }
          a {
             color: #00ddeb;
             text-decoration: underline;
@@ -208,20 +213,18 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-container">
-            <div class="nav-center">
-                <span class="logo">BingeBuddy</span>
-                <button class="nav-button" onclick="navigateTo('home')">Home</button>
-                <button class="nav-button" onclick="navigateTo('about')">About Us</button>
-                <button class="nav-button" onclick="navigateTo('problem')">Problem</button>
-                <button class="nav-button" onclick="navigateTo('presentations')">Presentations</button>
-                <button class="nav-button" onclick="navigateTo('deliverables')">Deliverables</button>
-                <button class="nav-button" onclick="navigateTo('solution')">Solution</button>
-                <button class="nav-button" onclick="navigateTo('userstories')">User Stories</button>
-                <button class="nav-button" onclick="navigateTo('lab1')">Lab 1</button>
-                <button class="nav-button" onclick="navigateTo('references')">References</button>
-                <button class="nav-button" onclick="navigateTo('glossary')">Glossary</button>
-                <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Bingbuddy_Logo.png" alt="BingeBuddy Logo" class="navbar-logo" onerror="this.src='https://via.placeholder.com/32?text=Logo';">
+        <span class="logo">BingeBuddy</span>
+        <button class="nav-button" onclick="navigateTo('home')">Home</button>
+        <button class="nav-button" onclick="navigateTo('about')">About Us</button>
+        <button class="nav-button" onclick="navigateTo('problem')">Problem</button>
+        <button class="nav-button" onclick="navigateTo('presentations')">Presentations</button>
+        <button class="nav-button" onclick="navigateTo('deliverables')">Deliverables</button>
+        <button class="nav-button" onclick="navigateTo('solution')">Solution</button>
+        <button class="nav-button" onclick="navigateTo('userstories')">User Stories</button>
+        <button class="nav-button" onclick="navigateTo('lab1')">Lab 1</button>
+        <button class="nav-button" onclick="navigateTo('references')">References</button>
+        <button class="nav-button" onclick="navigateTo('glossary')">Glossary</button>
+        <img src="https://raw.githubusercontent.com/Strillakilla/BingeBuddy/refs/heads/main/images/Bingbuddy_Logo.png" alt="BingeBuddy Logo" class="navbar-logo" onerror="this.src='https://via.placeholder.com/32?text=Logo';">
 </div>
 <div class="main">
     <div class="section" id="home">
@@ -310,8 +313,8 @@
     </div>
     <div class="section" id="lab1">
         <h2>Lab 1</h2>
-        <p style="text-align: center;"><p>Documentation and analysis for our CS410 Lab 1 deliverable.</p>
-        <p style="text-align: center;"><li>Link to Lab 1 Outline:</li> <a href="documents/lab1outline.pdf" target="_blank">View PDF</a>
+        <p>Documentation and analysis for our CS410 Lab 1 deliverable.</p>
+        <li>Link to Lab 1 Outline: <a href="documents/lab1outline.pdf" target="_blank">View PDF</a></li>
     </div>
     <div class="section" id="references">
         <h2>References</h2>
