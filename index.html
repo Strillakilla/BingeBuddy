@@ -53,22 +53,18 @@
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .nav-button:hover {
-            background-color: #555;
+            background-color: #3a3a3a;
+            transform: translateY(-2px);
         }
         .main {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .content-wrapper{
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
-            text-align: left;
+            padding: 3rem 1.5rem;
         }
         .section {
             display: none;
-            margin-bottom: 40px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
         .section.active {
             display: block;
